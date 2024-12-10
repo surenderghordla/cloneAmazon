@@ -7,9 +7,10 @@
 
 .navbar{
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     height: 60px;
-    background-color: #0f1111;
+    background-color: rgb(0,66,52);
     color: white;
 }
 
@@ -30,12 +31,18 @@
 }
 
 .border:hover{
-    border: 1.5px solid white;
+    border: 1px solid white;
+    padding: .5rem;
+    border-radius: .11rem;
 }
 
+
 /** box2 **/
+.nav-address{
+    font-size: 14px;
+}
 .add-first{
-    color: #cccccc;
+    color: rgb(198,191,180);
     font-size: 0.85rem;
     margin-left: 15px;
 }
@@ -57,6 +64,12 @@
     width: 620px;
     height: 40px;
     border-radius: 4px;
+    justify-content: space-evenly;
+}
+
+.nav-search:active{
+    border: 2px solid pink;
+    border-radius: 4px;
 }
 
 .search-select{
@@ -65,4 +78,52 @@
     border-bottom-left-radius: 4px;
     width: 50px;
     text-align: center;
+    border: none;
+    font-size: 1rem;
+}
+
+.search-input{
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+}
+
+.search-icon{
+    display: flex;
+    width: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #7f1153;
+    color: #fff;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}   
+
+/** box4 **/
+.nav-flag{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.flag-text{
+    padding-left: .3rem;
+    font-size:1.3rem;
+    font-weight: 500;
+}
+
+/**box5**/
+.nav-secound{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/** box7 **/
+.nav-cart{
+    font-size: 2.33rem;
 }
