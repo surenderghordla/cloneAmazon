@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+header{
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
 .navbar{
     display: flex;
     justify-content: space-evenly;
@@ -144,12 +150,23 @@
     margin-right: 20px;
 }
 
+/**main**/
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E3E6E6;
+    padding-bottom: 1rem;
+
+}
+
 /** hero-section**/
 
 .hero-section{
     display: flex;
     background-image: url(./images/hero_image.jpg);
     height: 300px;
+    width: 100%;
     background-size: cover;
     justify-content: center;
     align-items: end;
@@ -157,8 +174,8 @@
 
 .hero-section p{
     display: flex;
-    width: 95%;
     height: 40px;
+    width: 95%;
     background-color: #fff;
     color: black;
     margin-bottom: 20px;
@@ -175,26 +192,50 @@
 
 .shop-section{
     display: flex;
-    flex-wrap:wrap;
-    background-color: #E3E6E6;
-    height: 800px;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
+    height: min-content;
+    padding: .5rem 0;
+    width: 95%;
 }
 .box{
     height: 400px;
-    width: 22%;
+    width: 24%;
+    margin: 0.5rem;
     background-color: #fff;
     padding: 1rem;
 }
 
 .box-img{
     height: 300px;
-    background-size: contain;
+    background-size:cover;
+    background-position: 50% 50%;
     margin: 1rem 0;
 }
 
 .box-content p{
     color: #007185;
+}
+
+/**Section-as**/
+.section-as{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    background-color: #ffffff;
+    height: 300px;
+    width: 95%;
+    padding: 2rem;
+}
+
+.section-as ul{
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+    height: min-content;
+}
+
+.section-as ul img{
+    height: 100%;
 }
 
 /**rhf-container**/
@@ -271,17 +312,15 @@
     color: #ffffff;
     height: 70px;
     width: 100%;
-    border: .5px solid white;
+    border-top: .5px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.foot-panel3-logo{
-    background-image: url(./images/amazon_logo.png);
-    background-size: cover;
-    height: 50px;
-    width: 100%;
+.foot-panel3 img{
+    height: 100%;
+    
 }
 
 /** footPanel4 **/
