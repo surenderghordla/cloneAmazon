@@ -3,6 +3,7 @@
     padding: 0;
     font-family: Arial;
     box-sizing: border-box;
+    width: auto;
 }
 
 header{
@@ -191,25 +192,23 @@ header{
 /** shop-section **/
 
 .shop-section{
-    display: flex;
-    flex-flow: row wrap;
-    height: min-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     padding: .5rem 0;
-    width: 95%;
+    width: 100%;
 }
 .box{
-    height: 400px;
-    width: 24%;
+    display: flex;
+    flex-direction: column;
     margin: 0.5rem;
     background-color: #fff;
-    padding: 1rem;
+    padding: .5rem 1rem;
 }
-
 .box-img{
     height: 300px;
     background-size:cover;
     background-position: 50% 50%;
-    margin: 1rem 0;
+    margin: .5rem 0;
 }
 
 .box-content p{
@@ -234,22 +233,24 @@ header{
     height: min-content;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 .section-as ul img{
     height: 100%;
 }
 
 /**rhf-container**/
 .rhf-container{
-    height: 150px;
     width: 100%;
     background-color: #fff;
-    border: .5px solid #E3E6E6;
-    border-radius: 4px;
     display: flex;
     flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: .5rem 0;
     color: #000000;
 }
 
@@ -287,11 +288,10 @@ header{
     display: flex;
     justify-content: space-evenly;
     background-color: #232F3E;
-    padding-top: 2rem;
-    height: 300px;
+    padding: 1rem .5rem;
 }
 
-.foot-panel2 h3{
+ .foot-panel2 h3{
     color: #ffffff;
 }
 
@@ -299,11 +299,16 @@ header{
     display: block;
     color: #dddddd;
     padding-top: 1rem;
-    font-size: 1.01rem;
+    font-size: 1rem;
 }
 
 .foot-panel2 a:hover{
     text-decoration: underline;
+} 
+@media screen and (max-width: 1000px) {
+    html{
+        font-size: 12px;
+    }
 }
 
 /** foot-panel3 **/
